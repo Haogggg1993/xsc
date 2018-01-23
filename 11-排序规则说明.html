@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>11-排序规则说明</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/11-排序规则说明/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/11-排序规则说明/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2079" class="ax_default _一级标题">
+        <div id="u2079_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2080" class="text">
+          <p><span>排序规则说明：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2081" class="ax_default _三级标题">
+        <div id="u2081_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2082" class="text">
+          <p><span>一、综合排序</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2083" class="ax_default label">
+        <div id="u2083_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2084" class="text">
+          <p><span>根据综合的评分高低进行排序，综合评分=[店铺评分+商品评分]x地域因子%-差评因子</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2085" class="ax_default label">
+        <div id="u2085_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2086" class="text">
+          <p><span>店铺评分=[店铺星级xN%]+[店铺好评率X100]XN%]+[支付转化率x100xN%]</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2087" class="ax_default label">
+        <div id="u2087_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2088" class="text">
+          <p><span>商品评分=[成交率x100xN%]+[商品收藏数XN%]+[好评率x100xN%]+</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2089" class="ax_default label">
+        <div id="u2089_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2090" class="text">
+          <p><span>地域因子=商品发货地与卖家收货地址相符</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2091" class="ax_default label">
+        <div id="u2091_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2092" class="text">
+          <p><span>差评因子=商品差评数量/商品评论总数x100xN%</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2093" class="ax_default box_2">
+        <div id="u2093_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2094" class="text">
+          <p><span style="font-family:'Helvetica';">1</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、</span><span style="font-family:'Helvetica';">N%</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">的值可以在总后台配置（N相当于是权重）</span><span style="font-family:'Helvetica';"></span></p><p><span style="font-family:'Helvetica';">2</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、假设评分一致，按商品上架时间先后</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3、设一家店铺，星级为5权重为200%，店铺好评率为95%权重为20%，支付转化率为80%权重为20%。再设该店铺下的商品A的成交率为100%权重为10%，商品收藏数为100权重为1%，好评率为80%权重为10%，地域因子为120%，差评因子为200%，差评数量为10，评论总数为100，发货地为广东省广州市。然后用户的收货地址也是广东省广州市。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">则这个商品A的综合评分是：[5x200%]+[95%x100x20%]+[80%x100x20%]+[100%x100x10%]+[100x1%]+[80%x100x10%]x120%-[[10/100]x100x200%]=56.8分</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">综合排名就是根据这个分数的高低进行排序。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2095" class="ax_default _三级标题">
+        <div id="u2095_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2096" class="text">
+          <p><span>二、销量优先</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2097" class="ax_default label">
+        <div id="u2097_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2098" class="text">
+          <p><span>商品销量越高排名越前，如果销量一样则按照商品的上架时间正序排。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2099" class="ax_default _三级标题">
+        <div id="u2099_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2100" class="text">
+          <p><span>三、价格由高到低</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2101" class="ax_default label">
+        <div id="u2101_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2102" class="text">
+          <p><span>略</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2103" class="ax_default _三级标题">
+        <div id="u2103_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2104" class="text">
+          <p><span>四、价格由低到高</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2105" class="ax_default label">
+        <div id="u2105_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2106" class="text">
+          <p><span>略</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2107" class="ax_default _三级标题">
+        <div id="u2107_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2108" class="text">
+          <p><span>五、白钻抵扣</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2109" class="ax_default label">
+        <div id="u2109_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2110" class="text">
+          <p><span>白钻抵扣的金额越高则排名越前，举例商品A，设置白钻抵扣为10%，商品价格10000。商品B，设置白钻抵扣50%，商品价格1000.</span></p><p><span>则商品A可用白钻抵扣1000，商品B可用白钻抵扣500，商品A排在商品B前面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2111" class="ax_default _三级标题">
+        <div id="u2111_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2112" class="text">
+          <p><span>六、消费金抵扣</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2113" class="ax_default label">
+        <div id="u2113_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2114" class="text">
+          <p><span>与五同理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2115" class="ax_default _三级标题">
+        <div id="u2115_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2116" class="text">
+          <p><span>七、返白钻最高</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2117" class="ax_default label">
+        <div id="u2117_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2118" class="text">
+          <p><span>字面意思</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2119" class="ax_default _三级标题">
+        <div id="u2119_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2120" class="text">
+          <p><span>八、返红钻最高</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2121" class="ax_default label">
+        <div id="u2121_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2122" class="text">
+          <p><span>字面意思</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2123" class="ax_default _三级标题">
+        <div id="u2123_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2124" class="text">
+          <p><span>九、好评</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u2125" class="ax_default label">
+        <div id="u2125_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u2126" class="text">
+          <p><span>好评率最高的商品排在前面，如果好评率一样则比较销量大小，如果销量一样则比较商品上架时间</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
